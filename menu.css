@@ -1,0 +1,194 @@
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.contact-item i {
+    margin-right: 10px;
+}
+
+/* ----- END SHOP INFORMATION ----- */
+
+/* ----- Media query for responsiveness ----- */
+@media only screen and (max-width: 800px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* ----- Media query for responsiveness ----- */
+
+/* ----- START MENU 4 FLIP BOX ----- */
+.flip-card-container {
+    display: flex;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 30px;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 30px;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 30px;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 30px;
+}
+
+.flip-card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+/* ----- END MENU 4 FLIP BOX ----- */
+
+/* ----- START HOT-BREW PRODUCT PAGE ----- */
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product-details h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.product-details p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: left;
+    text-align: justify;
+}
+
+.product-price {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.variation-selector {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    margin-right: 25px; /* Add spacing between labels and select elements */
+}
+
+select {
+    padding: 5px;
+    font-size: 1em;
+    margin-right: 20px; /* Add spacing between select elements */
+}
+
+button {
+    background-color: #006442;
+    color: #ffffff;
+    padding: 10px 100px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #099e63; /* Change the background color on hover */
+}
+
+.footer {
+    background-color: #006442;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+* Add this style for the back button */
+.back-button {
+    background-color: #004529;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #002418; /* Change the background color on hover */
+}

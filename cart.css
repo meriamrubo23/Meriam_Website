@@ -1,0 +1,69 @@
+/* ----- START MY CART PAGE ----- */
+
+.cart-item {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.cart-item img {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #006442;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004529;
+}
+
+/* ----- END MY CART PAGE ----- */
+
+/* ----- START FOOTER AREA ----- */
+
+.footer {
+    background-color: #006442;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ----- END FOOTER AREA ----- */
+
+/* Add this style for the back button */
+.back-button {
+    background-color: #004529;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #002418; /* Change the background color on hover */
+}
